@@ -27,6 +27,6 @@ RUN					wget http://mcmyadmin.com/Downloads/MCMA2_glibc26_2.zip && \
 
 USER				mcmyadmin
 
-RUN					/home/mcmyadmin/MCMA2_Linux_x86_64 -nonotice -updateonly
+ADD         McMyAdmin.conf /home/mcmyadmin/McMyAdmin.conf
 
-ENTRYPOINT	/home/mcmyadmin/MCMA2_Linux_x86_64 -setpass "$PASSWORD" +java.memory $JAVA_MEMORY
+RUN					/home/mcmyadmin/MCMA2_Linux_x86_64 -nonotice -updateonly -setpass "$PASSWORD" +java.memory $JAVA_MEMORY
