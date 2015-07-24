@@ -25,6 +25,6 @@ USER				mcmyadmin
 
 ADD         McMyAdmin.conf /home/mcmyadmin/McMyAdmin.conf
 ADD         start.sh /start.sh
-RUN         RUN chmod 755 /start.sh
+RUN         chmod 755 /start.sh
 
 CMD         ["/start.sh"]
