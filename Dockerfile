@@ -24,5 +24,6 @@ RUN					wget http://mcmyadmin.com/Downloads/etc.zip && \
 USER				mcmyadmin
 
 ADD         McMyAdmin.conf /home/mcmyadmin/McMyAdmin.conf
+ADD         start.sh /start.sh
 
 CMD         ["/start.sh"]
