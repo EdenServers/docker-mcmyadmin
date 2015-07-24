@@ -19,8 +19,14 @@ WORKDIR			/usr/local
 RUN					wget http://mcmyadmin.com/Downloads/etc.zip && \
 						unzip etc.zip && rm etc.zip
 
+WORKDIR			/home/mcmyadmin
+RUN					wget http://mcmyadmin.com/Downloads/MCMA2_glibc26_2.zip && \
+						unzip MCMA2_glibc26_2.zip && rm MCMA2_glibc26_2.zip
+
 ADD         McMyAdmin.conf /home/mcmyadmin/McMyAdmin.conf
 ADD         start.sh /start.sh
 RUN         chmod 755 /start.sh
+
+RUN					/home/mcmyadmin/MCMA2_Linux_x86_64 -nonotice -updateonly
 
 CMD         ["/start.sh"]
