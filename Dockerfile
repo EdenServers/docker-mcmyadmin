@@ -9,8 +9,6 @@ ENV					PASSWORD edenservers
 ENV					JAVA_MEMORY 2048
 VOLUME      /home/mcmyadmin/
 
-RUN					useradd mcmyadmin -m -s /bin/bash
-
 RUN					rm -rf /var/lib/apt/lists/* && \
             apt-get clean && \
             apt-get update && \
@@ -20,8 +18,6 @@ RUN					rm -rf /var/lib/apt/lists/* && \
 WORKDIR			/usr/local
 RUN					wget http://mcmyadmin.com/Downloads/etc.zip && \
 						unzip etc.zip && rm etc.zip
-
-USER				mcmyadmin
 
 ADD         McMyAdmin.conf /home/mcmyadmin/McMyAdmin.conf
 ADD         start.sh /start.sh
