@@ -7,7 +7,6 @@ EXPOSE      8123
 
 ENV					PASSWORD edenservers
 ENV					JAVA_MEMORY 2048
-VOLUME      /home/mcmyadmin/
 
 RUN					rm -rf /var/lib/apt/lists/* && \
             apt-get clean && \
