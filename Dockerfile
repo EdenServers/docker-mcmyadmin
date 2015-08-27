@@ -5,9 +5,6 @@ EXPOSE			8080
 EXPOSE			25565
 EXPOSE      8123
 
-ENV					PASSWORD edenservers
-ENV					JAVA_MEMORY 2048
-
 RUN					rm -rf /var/lib/apt/lists/* && \
             apt-get clean && \
             apt-get update && \
