@@ -1,6 +1,7 @@
 # Official McMyAdmin Container on EdenServers
 
 [![Run on EdenServers](https://img.shields.io/badge/EdenServers-view-blue.svg)](http://www.edenservers.us)
+[![](https://badge.imagelayers.io/edenservers/mcmyadmin:latest.svg)](https://imagelayers.io/?images=edenservers/mcmyadmin:latest 'Get your own badge on imagelayers.io')
 
 ![](http://image.noelshack.com/fichiers/2015/35/1440685501-images.png)
 
