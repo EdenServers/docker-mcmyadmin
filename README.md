@@ -45,7 +45,7 @@ This initial version contains:
 
 ## Run example
 
-    $  docker run -e PASSWORD=edenservers -e JAVA_MEMORY=2056 -p 8080:8080 -p 8123:8123 -p 25565:25565 --name mcmymadin -d edenservers/mcmyadmin
+    $  docker run -e PASSWORD=edenservers -e JAVA_MEMORY=2048 -p 8080:8080 -p 8123:8123 -p 25565:25565 --name mcmymadin -d edenservers/mcmyadmin
 
 ---
 
